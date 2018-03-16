@@ -1,0 +1,73 @@
+/* list setup on index page*/
+
+.list-group {
+    margin-bottom: 1rem;
+    border: 1px solid #e6e6e6;
+    border-radius: 0;
+    background: #fefefe;
+    box-shadow: none;
+    overflow: hidden;
+    color: #0a0a0a;
+}
+/* make color switch one by one */
+.list-group-item {
+    padding: 0.5rem;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.list-group-item.active {
+    color: #55acee;
+    background-color: #f1f1f1;
+    border-color:  #1779ba;
+}
+/* darken color when mouse on it */
+.list-group-item:hover, .list-group-item:focus {
+    background-color: #e6e6e6;
+}
+
+.list-group-item:hover.active, .list-group-item:focus.active {
+    background-color: #1779ba;
+}
+
+/* layout setup on helper page */
+/* when the page width smaller than min-width the column number will shrink down */
+@media screen and (min-width: 25em) {
+    .masonry-css {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media screen and (min-width: 37.5em) {
+    .masonry-css {
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+    }
+}
+
+@media screen and (min-width: 50em) {
+    .masonry-css {
+        -webkit-column-count: 4;
+        -moz-column-count: 4;
+        column-count: 4;
+    }
+}
+
+@media screen and (min-width: 68.75em) {
+    .masonry-css {
+        -webkit-column-count: 5;
+        -moz-column-count: 5;
+        column-count: 5;
+    }
+}
+
+.masonry-css-item {
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    margin-bottom: 1rem;
+}
+
+

@@ -1,0 +1,53 @@
+/* set a imae as background */
+body{
+    background-image: url("../image/background.jpg");
+    background-size: cover;
+}
+/* set a customize font */
+p{
+    font-family: 'Satisfy', cursive;
+    color: #0c3d5d;
+    font-size: 30px;
+}
+/* for underline animation */
+.hover-underline-menu {
+    width: 90%;
+}
+
+.hover-underline-menu .menu {
+    background-color: #2C3840;
+}
+
+.hover-underline-menu .menu a {
+    color: #fefefe;
+    padding: 1.2rem 1.5rem;
+}
+
+.hover-underline-menu .menu .underline-from-center {
+    position: relative;
+}
+
+.hover-underline-menu .menu .underline-from-center::after {
+    content: "";
+    position: absolute;
+    top: calc(100% - 0.125rem);
+    border-bottom: 0.125rem solid #fefefe;
+    left: 50%;
+    right: 50%;
+    transition: all 0.5s ease;
+}
+
+.hover-underline-menu .menu .underline-from-center:hover::after {
+    left: 0;
+    right: 0;
+    transition: all 0.5s ease;
+}
+/* set a gap of each single section */
+.cell{
+    padding: 50px;
+    position: center;
+}
+
+.card-divider{
+    background: #f1f1f1;
+}

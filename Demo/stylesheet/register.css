@@ -1,0 +1,57 @@
+/* sign up section setup*/
+
+/* the whole section */
+.login-box {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 5%;
+    box-shadow: 0 2px 4px rgba(10, 10, 10, 0.4);
+    background: #fefefe;
+    border-radius: 0;
+    overflow: hidden;
+}
+
+.login-box-title {
+    font-weight: 300;
+    font-size: 1.875rem;
+    margin-bottom: 1.25rem;
+}
+
+.login-box-form-section {
+    padding: 2.5rem;
+}
+
+.login-box-input {
+    margin-bottom: 1.25rem;
+    height: 2rem;
+    border: 0;
+    padding-left: 0;
+    box-shadow: none;
+    border-bottom: 1px solid #1779ba;
+    font-weight: 400;
+}
+/* sumbit button setup, track mouse to change color*/
+.login-box-submit-button {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0.85em 1em;
+    transition: background-color 0.25s ease-out, color 0.25s ease-out;
+    font-size: 0.9rem;
+    line-height: 1;
+    text-align: center;
+    cursor: pointer;
+    background-color: #1779ba;
+    color: #fefefe;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+[data-whatinput='mouse'] .login-box-submit-button {
+    outline: 0;
+}
+
+.login-box-submit-button:hover, .login-box-submit-button:focus {
+    background-color: #126195;
+    color: #fefefe;
+}
+
